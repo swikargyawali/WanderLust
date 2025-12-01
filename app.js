@@ -1,7 +1,5 @@
 const express= require('express');
-
 const app = express();
-
 
 //connecting a database
 const mongoose= require('mongoose');
@@ -13,7 +11,6 @@ main()
 })
 .catch((err)=>{
     console.log(err);
-
 });
 
 async function main(){
@@ -22,8 +19,8 @@ async function main(){
 
 app.get("/",(req,res)=>{
     res.send("Hi, I am root");
-})
+});
 
 app.listen(8080,()=>{
     console.log("server is listening to 8080");
-})
+});
